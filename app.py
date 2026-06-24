@@ -469,7 +469,7 @@ elif page == "📊 Analytics":
             
         with c2:
             st.markdown("#### Attendance vs Final Score Correlation")
-            fig_s = px.scatter(df, x="attendance", y="score", trendline="ols", color="passed", color_discrete_map={True: "#06d6a0", False: "#ef233c"})
+            fig_s = px.scatter(df, x="attendance", y="score", color="passed", color_discrete_map={True: "#06d6a0", False: "#ef233c"})
             fig_s.update_layout(paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="#e0f4ff"), height=280)
             st.plotly_chart(fig_s, use_container_width=True)
 
